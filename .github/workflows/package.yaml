@@ -17,8 +17,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: package
-          fetch-depth: 0
+      - name: Enable pacakge
+        run: mv data/data.yaml data/datapackage.yaml
       - name: Validate data
         uses: frictionlessdata/repository@main

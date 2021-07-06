@@ -17,8 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: resource
-          fetch-depth: 0
+      - name: Enable resources
+        run: |
+          mv data/valid.json data/valid.resource.json
+          mv data/invalid.json data/invalid.resource.json
       - name: Validate data
         uses: frictionlessdata/repository@main
