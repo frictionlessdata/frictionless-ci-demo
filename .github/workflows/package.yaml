@@ -1,12 +1,12 @@
-name: experimental
+name: package
 
 on:
   push:
     branches:
-      - main
+      - package
   pull_request:
     branches:
-      - main
+      - package
 
 jobs:
 
@@ -19,6 +19,3 @@ jobs:
         uses: actions/checkout@v2
       - name: Validate data
         uses: frictionlessdata/repository@main
-        with:
-          inquiry: extra
-

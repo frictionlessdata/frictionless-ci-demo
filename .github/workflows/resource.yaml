@@ -1,12 +1,12 @@
-name: experimental
+name: resource
 
 on:
   push:
     branches:
-      - main
+      - resource
   pull_request:
     branches:
-      - main
+      - resource
 
 jobs:
 
@@ -19,6 +19,3 @@ jobs:
         uses: actions/checkout@v2
       - name: Validate data
         uses: frictionlessdata/repository@main
-        with:
-          inquiry: extra
-
