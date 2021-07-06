@@ -3,10 +3,10 @@ name: package
 on:
   push:
     branches:
-      - package
+      - main
   pull_request:
     branches:
-      - package
+      - main
 
 jobs:
 
@@ -17,5 +17,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        ref: package
       - name: Validate data
         uses: frictionlessdata/repository@main
