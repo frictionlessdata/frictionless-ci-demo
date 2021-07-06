@@ -19,5 +19,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: resource
+          fetch-depth: 0
       - name: Validate data
         uses: frictionlessdata/repository@main
