@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        ref: resource
+        with:
+          ref: resource
       - name: Validate data
         uses: frictionlessdata/repository@main
