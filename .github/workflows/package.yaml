@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Enable pacakge
+      - name: Enable package
         run: mv data/data.yaml data/datapackage.yaml
       - name: Validate data
         uses: frictionlessdata/repository@main
