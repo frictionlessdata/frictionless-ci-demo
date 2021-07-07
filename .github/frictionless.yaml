@@ -1,8 +1,8 @@
 main:
   tasks:
-    - source: data/valid.csv
+    - path: data/valid.csv
 
 extra:
   tasks:
-    - source: data/valid.csv
-    - source: data/invalid.csv
+    - path: data/valid.csv
+    - path: data/invalid.csv
