@@ -19,7 +19,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Enable package
         run: |
-          rm .github/frictionless.yaml
           mv data/data.yaml data/datapackage.yaml
       - name: Validate data
-        uses: frictionlessdata/repository@v1
+        uses: frictionlessdata/repository@v2

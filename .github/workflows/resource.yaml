@@ -19,8 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Enable resources
         run: |
-          rm .github/frictionless.yaml
           mv data/valid.json data/valid.resource.json
           mv data/invalid.json data/invalid.resource.json
       - name: Validate data
-        uses: frictionlessdata/repository@v1
+        uses: frictionlessdata/repository@v2
