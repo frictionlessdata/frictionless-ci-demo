@@ -21,4 +21,4 @@ jobs:
         run: |
           mv data/data.yaml data/datapackage.yaml
       - name: Validate data
-        uses: frictionlessdata/repository@v2.1
+        uses: frictionlessdata/repository@v2
