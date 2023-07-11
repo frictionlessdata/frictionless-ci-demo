@@ -22,4 +22,4 @@ jobs:
           mv data/valid.json data/valid.resource.json
           mv data/invalid.json data/invalid.resource.json
       - name: Validate data
-        uses: frictionlessdata/repository@v2
+        uses: frictionlessdata/repository@v2.1
