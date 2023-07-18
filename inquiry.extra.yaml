@@ -1,3 +1,2 @@
 tasks:
-  - path: data/valid.csv
-  - path: data/invalid.csv
+  - path: data/*.csv
